@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* Full layout */
+.dashboard{
+    display:flex;
+    height:100vh;
+    background:#e9ecef;
+}
+
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#161c24;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+
+/* Logo */
+.logo{
+    height:85px;
+    display:flex;
+    align-items:center;
+    padding-left:16px;
+    border-bottom:1px solid #3b4148;
+}
+
+
+.logo h3{
+    font-size:32px;
+}
+
+
+/* Menu */
+.menu{
+    list-style:none;
+    margin-top:20px;
+    padding:0 15px;
+    flex:1;
+}
+
+
+.menu li{
+    margin-bottom:15px;
+}
+
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    border-radius:6px;
+}
+
+
+.menu a:hover{
+    background:#2f3742;
+}
+
+
+/* Footer */
+.sidebar-footer{
+    border-top:1px solid #3b4148;
+    padding:15px;
+}
+
+
+.profile-circle{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#5a636d;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+
+.footer-btn{
+    width:100%;
+    margin-top:10px;
+    background:transparent;
+    color:white;
+    border:1px solid #6c757d;
+    padding:8px 10px;
+    border-radius:4px;
+    text-align:left;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+
+.footer-btn:hover{
+    background:#2f3742;
+}
+
+
+/* Right section */
+.main-section{
+    margin-left:250px;
+    flex:1;
+}
+
+
+/* Navbar */
+.navbar-admin{
+    height:65px;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* Menu icon */
+.menu-btn{
+    border:none;
+    background:none;
+    font-size:28px;
+    color:#0d6efd;
+    cursor:pointer;
+}
+
+
+/* Right */
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.nav-user{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.logout-btn{
+    background:#dc3545;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+/* Content */
+.page-content{
+    height:calc(100vh - 65px);
+    background:#ececec;
+    padding:20px;
+    overflow:auto;
+}
